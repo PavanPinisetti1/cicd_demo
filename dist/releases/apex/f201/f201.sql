@@ -37,7 +37,7 @@ prompt APPLICATION 201 - CICD_DEMO
 --   Flashback:       0
 --   Export Type:     Application Export
 --     Pages:                      4
---       Items:                    4
+--       Items:                    3
 --       Processes:                5
 --       Regions:                  3
 --       Buttons:                  1
@@ -105,7 +105,7 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_value_01=>'CICD_DEMO'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>6
-,p_version_scn=>12213465998564
+,p_version_scn=>12213465894014
 ,p_print_server_type=>'INSTANCE'
 ,p_file_storage=>'DB'
 ,p_is_pwa=>'Y'
@@ -1284,21 +1284,6 @@ wwv_flow_imp_page.create_ig_report_column(
 ,p_is_visible=>true
 ,p_is_frozen=>false
 );
-wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(24768455404890010)
-,p_name=>'P2_NEW'
-,p_item_sequence=>20
-,p_prompt=>'Sample Test'
-,p_display_as=>'NATIVE_TEXT_FIELD'
-,p_cSize=>30
-,p_field_template=>1609121967514267634
-,p_item_template_options=>'#DEFAULT#'
-,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
-  'disabled', 'N',
-  'submit_when_enter_pressed', 'N',
-  'subtype', 'TEXT',
-  'trim_spaces', 'BOTH')).to_clob
-);
 wwv_flow_imp_page.create_page_process(
  p_id=>wwv_flow_imp.id(24768380267890009)
 ,p_process_sequence=>10
@@ -1538,4 +1523,4 @@ prompt  ...done
 
 
 
--- sqlcl_snapshot {"hash":"286dbdb31a432f7a8e1af1869caece5fdfe8a54b","type":"APEX_APPLICATIONS","name":"f201","schemaName":"WKSP_EBS2CLOUD_MIGRATION","sxml":""}
+-- sqlcl_snapshot {"hash":"38bc9a93cc5f80ebb91f19938ca737a9fcf960c3","type":"APEX_APPLICATIONS","name":"f201","schemaName":"WKSP_EBS2CLOUD_MIGRATION","sxml":""}

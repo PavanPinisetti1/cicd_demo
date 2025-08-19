@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+<include file="f1000/f1000.xml" relativeToChangelogFile="true"/>
+<include file="f145/f145.xml" relativeToChangelogFile="true"/>
+<include file="f190/f190.xml" relativeToChangelogFile="true"/>
+<include file="f192/f192.xml" relativeToChangelogFile="true"/>
+<include file="f201/f201.xml" relativeToChangelogFile="true"/>
+</databaseChangeLog>
